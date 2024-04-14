@@ -1,0 +1,2322 @@
+/*  **********  Custom Properties CSS  **********  */
+:root{
+  --first-color: rgb(250, 191, 20);
+  --first-alpha-color: rgb(250, 191, 20, 0.75);
+  --second-color: rgb(0, 0, 0);
+  --second-alpha-color: rgb(0, 0, 0, 0.75);
+  --third-color: rgb(143, 0, 255);
+  --third-alpha-color: rgb(143, 0, 255, 0.75);
+  --fourth-color: rgb(0, 0, 0);
+  --fourth-alpha-color: rgb(80, 4, 110, 0.75);
+
+
+  --link-color: rgb(255, 255, 255);
+  --link-alpha-color: rgb(143, 0, 255, 0.75);
+  --text-color: rgb(88, 88, 88);
+   
+  /* Colores de fondo*/
+  --bg-color: rgb(241, 237, 237);
+  --bg-alpha-color: rgb(241, 237, 237, 0.75);
+  --bg-color-2:  rgb(245, 245, 245);
+  --gb-alpha-color-2:  rgb(245, 245, 245, 0.75);
+
+   /* Otros colores*/
+  --yellow-color: rgb(240, 240, 106);
+  --dark-color: rgb(51, 49, 49);
+  --white-color: rgb(255,255,255);
+  --grayDark-color: rgb(128,128,128);
+  --grayDark-alpha-color: rgb(128,128,128, 0.75);
+  --grayLigth-color: rgb(219, 214, 214); 
+  --grayLigth-alpha-color: rgb(219, 214, 214 0.75); 
+}
+
+/*  **********  Reset Styles CSS **********  */
+/*  **********  ***** ****** *** **********  */
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+ color: var(--link-color);
+ transition: all .3s ease-out;
+}
+
+a:hover {
+  color: var(--first-color);
+}
+
+body {
+  font-family: "Raleway", sans-serif; 
+  color:var(--text-color);
+  font-size: 14px;
+ }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.websites {
+ color: var(--grayLigth-color);
+}
+
+/*  ********** Bootstrap Styles **********  */
+/*  ********** ********* ****** **********  */
+
+.btn-primary {
+ background-color: var(--white-color);
+ border-color: var(--white-color);
+ --bs-btn-color: var(--second-color);
+ --bs-btn-hover-bg: var(--second-color);
+ --bs-btn-hover-border-color: var(--second-color);
+ --bs-btn-hover-color: var(--white-color);
+ --bs-btn-active-bg: var(--second-color);
+ --bs-btn-active-border-color: var(--second-color);
+ --bs-btn-font-size: 0.75rem;
+ transition: background 0.5s, transform 0.5s ease-out;
+ font-weight: 550;
+}
+
+.btn-primary:hover {
+  transform: translateY(-7px);
+}
+
+.btn-yellow {
+ background-color: var(--first-color);
+ border-color: var(--first-color);
+ --bs-btn-hover-bg: var(--white-color);
+ --bs-btn-hover-border-color: var(--white-color);
+ --bs-btn-hover-color: var(--second-color);
+ --bs-btn-color: var(--second-color);
+ --bs-btn-active-bg: var(--second-color);
+ --bs-btn-active-border-color: var(--second-color);
+ --bs-btn-font-size: 0.75rem;
+ transition: background 0.5s, transform 0.5s ease-out;
+ font-weight: 600;
+}
+
+.btn-yellow:hover {
+  transform: translateY(-7px);
+}
+
+.btn-black {
+  background-color: var(--second-color);
+  border-color: var(--second-color);
+  --bs-btn-hover-bg: var(--white-color);
+  --bs-btn-hover-border-color: var(--second-color);
+  --bs-btn-hover-color: var(--second-color);
+  --bs-btn-color: var(--white-color);
+  --bs-btn-active-bg: var(--second-color);
+  --bs-btn-active-border-color: var(--second-color);
+  --bs-btn-font-size: 0.75rem;
+  transition: background 0.5s, transform 0.5s ease-out;
+  font-weight: 600;
+ }
+ 
+ .btn-black:hover {
+   transform: translateY(-7px);
+ }
+
+.btn-check {
+ background-color: var(--second-color);
+ border-color: var(--bs-btn-active-border-color);
+}
+
+.bg-dark {
+  background-color: var(--second-color) !important;
+}
+
+.bg--second-color {
+  background-color: none;
+}
+
+.dropdown-item {
+ color: var(--first-alpha-color);
+ transition: all 0.3s ease-out;
+ font-weight: 500;
+ background-color: var(--second-color);
+}
+
+.dropdown-item:hover {
+  color: var(--second-color);
+}
+
+.dropdown-menu {
+  --bs-dropdown-font-size: 0.9rem;
+  --bs-dropdown-bg: var(--second-color);
+    --bs-dropdown-border-color:  var(--second-color);
+}
+
+.navbar-brand img {
+ width: auto;
+ height: 50px;
+ padding-left: 0.9rem;
+ transition: all 0.5s ease-out;
+}
+
+.navbar-brand img:hover {
+  transition: all 0.5s ease-out;
+  transform: translateX(8px);
+}
+
+.nav-item {   
+ transition: all 0.3s ease-out;
+}
+
+.nav-link {
+ padding-left: 0.5rem;
+ color: var(--first-color);
+ font-size: 0.85rem;
+}
+
+.nav-link:hover {
+ color: var(--white-color);
+
+} 
+
+/*  **********  My Styles  **********  */
+
+.bg-color{
+ background-color:  var(--gb-color-2);
+}
+
+.bg-alpha-color {
+ background-color:  var(--bg-alpha-color);
+ background-image: linear-gradient(
+  90deg,
+  rgb(241, 237, 237, 0.75),
+  rgb(255,255,255 0.30)
+ );
+}
+
+.bg-second-alpha-color {
+ background-color: var(--second-alpha-color);
+}
+
+.bg-gradient-gray-white {
+ background-color: var (-- grayLigth-color);
+ background-image: linear-gradient(
+  135deg,
+  rgba(248, 240, 253, 0.75),
+  rgb(255,255,255)
+ );
+
+ background-image: linear-gradient(
+  131.deg
+  rgb(216, 213, 213),
+  rgb(219, 214, 214)
+ );
+}
+
+.bg--second-color {
+ background-color:  rgb(0, 0, 0);
+}
+
+.bg-hero-image {
+ background-image: var(--bg-image);
+ background-repeat: no-repeat;
+ background-size: cover; 
+ background-position: center;
+}
+
+.error-404-hero {
+ background-repeat: no-repeat;
+ background-size: cover; 
+ color: var(--text-color) !important;
+ height: 80vh;
+ background-position: center;
+}
+
+.gracias-hero {
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--text-color) !important;
+  height: 100vh;
+  background-position: center;
+ }
+
+/* ********** HOME ********** */
+/* ********** **** ********** */
+
+.home-hero {
+  background: url(/images/home-hero-sal-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 500px;
+  background-position: center;
+}
+
+.home-hero h1 {
+  display: flex;
+  text-align: start;
+  font-family: "Righteous";
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--second-color);
+  margin-top: 10rem;
+  margin-left: 2rem;
+  line-height: 1;
+}
+
+/* ****** HOME CONTAINER 1 ******  */
+
+#home-container-1 {
+  margin-left: 0.5rem;
+  margin-top: 3rem;
+}
+
+#home-container-1 h3 {
+  color: var(--second-color);
+  font-size: 2rem;
+}
+
+.img-home-container-1 {
+  margin-left: 1.75rem;
+  margin-right: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+/* ****** HOME CONTAINER 2 ******  */
+
+#home-container-2 {
+  margin-left: 0.5rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+#home-container-2 p {
+  color: var(--second-color);
+  font-size: 1.2rem;
+}
+
+#home-container-2 i {
+  color: var(--second-color);
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+}
+
+#home-container-2 span {
+  font-weight: 600;
+}
+
+.img-home-container-2 {
+  margin-bottom: 2rem;
+  margin-left: 7.5rem;
+}
+
+.img-home-container-2 img {
+  margin-bottom: 2rem;
+  margin-left: 1.6rem;
+  transition: all 0.8s ease-out;
+  cursor: pointer; 
+}
+
+.img-home-container-2 img:hover {
+  transition: all 0.8s ease-out;
+  transform: scale(1.15);
+}
+
+
+/* ****** HOME BANNER PARALLAX ******  */
+.section-p1 {
+  padding: 20px 0px;
+}
+
+#banner-parallax {
+  background-image: url("../images/banner-parallax-s-negro.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  min-height: 400px;
+  width: 100%;
+  background-position: top 70% center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-left: 20px;
+}
+
+#banner-parallax span {
+  color: var(--first-color);
+}
+
+#banner-parallax h4 {
+  font-family: "Righteous";
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--white-color);
+  padding-bottom: 2rem;
+}
+
+#banner-parallax button {
+  margin-top: 2rem;
+}
+
+/* ****** HOME CARDS SERVICIOS ******  */
+
+.swiper {
+  width: 100%;
+  background-color: var(--second-color);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.swiper h4 {
+  color: var(--white-color);
+}
+
+#card-servicios h4 {
+  margin-bottom: 0rem;
+}
+
+.swiper-wrapper {
+  width: 99%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+
+.cards {
+  width: 20em;
+  height: 82%;
+  background-color: var(--first-color);
+  border-radius: 5em;
+  box-shadow: 0 0 2em rgb(0, 0, 0, .2);
+  padding: 1em 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 1em;
+}
+
+/*.swiper-slide:not(.swiper-slide-active){
+  filter: blur(1.5px);
+}*/
+
+.cards-image {
+  width: 12em;
+  height: 12em;
+  border-radius: 100%;
+  border: 5px solid var(--second-color);
+  padding: 2px;
+  margin-bottom: 1em;
+}
+
+.cards-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.cards-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards-title {
+  color: var(--second-color);
+  font-size: 1.5em;
+  font-weight: 400;
+  position: relative;
+  top: .2em;
+}
+
+.card-text {
+  color: var(--second-color);
+  text-align: center;
+  font-size: 0.9em;
+  margin: 1em 0;
+}
+
+/* ****** HOME BANNER MEDIO PARALLAX ******  */
+.section-p1 {
+  padding: 20px 0px;
+}
+
+#banner-medio-parallax {
+  background-image: url("/images/banner-medio-parallax.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  min-height: 500px;
+  width: 100%;
+  background-position: top 70% center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-left: 20px;
+}
+
+#banner-medio-parallax span {
+  color: var(--white-color);
+}
+
+#banner-medio-parallax h4 {
+  font-size: 3.75rem;
+  font-family: "Righteous";
+  font-weight: 600;
+  color: var(--second-color);
+  padding-bottom: 2.5rem;
+  line-height: 0.9;
+  margin-left: 2rem;
+}
+
+#banner-medio-parallax .btn-primary {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+/* ****** HOME FONDOS CAROUSEL  ******  */
+
+.fondos {
+  padding-top: 50px;
+}
+
+.fondos {
+  background-color: var(--second-color);
+  padding-top: 8rem !important;
+  padding-bottom: 3rem !important;
+} 
+
+.fondos {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.fondos h5 {
+  color: var(--white-color);
+}
+
+.fondos img {
+  text-align: center;
+}
+
+/* ****** HOME BANNER FINAL ******  */
+
+#banner-final-home .row {
+  margin-top: -2px;
+}
+
+#banner-final-home span {
+  color: var(--first-color);
+}
+#banner-final-home {
+  background: url(../images/isotipo-sal.webp);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 100vh;
+  min-height: 500px;
+  background-position: center;
+}
+#banner-final-home h4 {
+  font-size: 3rem;
+  font-family: "Righteous";
+  font-weight: 700;
+  color: var(--second-color);
+  padding-bottom: 0.5rem;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  line-height: 0.9;
+}
+#banner-final-home .btn-black {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+}
+
+/* ********** QUIENES SOMOS ********** */
+/* ********** ******* ***** ********** */
+
+.quienes-somos-hero {
+  background: url(/images/isotipo-negro-quienes-somos.webp);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 0.5vh;
+  min-height: 430px;
+  background-position: center;
+  margin-top: -.5rem;
+}
+
+.quienes-somos-hero h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: "Righteous";
+  color: var(--first-color);
+  display: flex;
+  text-align: start;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  line-height: 1;  
+}
+
+/* ---------- QUIENES SOMOS CONTAINER 1  ---------- */
+.quienes-somos-texto {
+  margin-top: 2rem;
+}
+
+.quienes-somos-texto p {
+  font-size: 1.125rem;
+}
+
+.quienes-somos-texto span {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  font-weight: 550;
+}
+
+.quienes-somos-texto i {
+  margin-left: 2rem;
+}
+
+/* ---------- QUIENES SOMOS TE BRINDAMOS ---------- */
+#te-brindamos {
+  padding-bottom: 20px;
+}
+
+.sub-title-te-brindamos {
+  color: var(--second-color);
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4
+}
+
+.te-brindamos-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  font-family: "Raleway";
+}
+
+.te-brindamos-list div {
+  background: var(--first-color);
+  padding: 30px;
+  border-radius: 60px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--second-color);
+  transition: all 0.4s ease-out;
+}
+
+.te-brindamos-list div:hover {
+  background: var(--second-color);
+  color: var(--white-color);
+  transform: translateY(-20px);
+  transition: all 0.4s ease-out;
+}
+
+.te-brindamos-list ul {
+  padding-inline-start: 20px;
+}
+
+.te-brindamos-list div h3 {
+  font-family: "Righteous";
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.te-brindamos-list div p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+.te-brindamos-list div a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+
+/* ------ QUIENES SOMOS - BANNER FINAL ------  */
+#banner-quienes-somos .row {
+  margin-top: -2px;
+}
+
+#banner-quienes-somos span {
+  color: var(--first-color);
+}
+
+#banner-quienes-somos {
+  background: url(../images/quienes-somos-container-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 80vh;
+  min-height: 500px;
+  background-position: center;
+}
+
+#banner-quienes-somos h3 {
+  font-family: "Righteous";
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: var(--second-color);
+  padding-bottom: 0.5rem;
+  margin-top: 7rem;
+  margin-left: 3rem;
+  line-height: 0.85;
+}
+
+#banner-quienes-somos h4 {
+  font-size: 1.7rem;
+  color: var(--second-color);
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  line-height: 0.85;
+}
+
+#banner-quienes-somos .btn-black {
+  margin-left: 3rem;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+}
+
+
+/* ---------- QUIENES SOMOS - CoFOUNDER ---------- */
+#CoFounder {
+  padding: 5px 0;
+  background: var(--white-color);
+  padding-top: 1.5rem;
+  padding-bottom: 1.25rem;
+  padding-left: 6rem;
+}
+
+.sub-title-CoFounder {
+  font-family: "Righteous";
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 55px;
+  color: var(--second-color);
+}
+
+.CoFounder-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.CoFounder {
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.CoFounder img {
+  width: 80%;
+  border-radius: 50px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.CoFounder:hover .layer {
+  height: 50;
+}
+
+.layer {
+  width: 80%;
+  height: 100%; /* Visibilidad de la capa amarilla */
+  /*background: linear-gradient(rgb(0, 0, 0 , 0.1), var(--white-color));*/
+  background: none;
+  border-radius: 50px;
+  color: var(--white-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  /*Datos para la capa transparente. Para bajar las letras ubicamos el display: */
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15px;
+  text-align:left;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  display: flex;
+  text-align:center;
+  color: var(--first-color);
+  margin-top: 280px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-family: "Righteous";
+}
+
+.layer h4 {
+  display: flex;  
+  text-align: center;
+  color: var(--white-color);
+  font-size: 17px;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.quienes-somos-brochure .btn-yellow {
+  --bs-btn-font-size: 0.9rem;
+  --bs-btn-hover-bg: var(--second-color);
+  --bs-btn-hover-border-color: var(--second-color);
+  --bs-btn-hover-bg: var(--white-color);
+  padding-left: 0.95rem;
+  padding-right: 0.95rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  margin-left: 0rem;
+  font-weight: 900;
+}
+
+
+/* ****** HOME FOOTER 1 ******  */
+
+#footer-1 {
+  background-color: var(--bg-gradient-gray-white);
+  margin-top: 30px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+footer h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--fourth-color);
+}
+
+footer h5 {
+  font-size: 14px;
+  padding-bottom: 8px;
+  color: var(--second-color);
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 12px;
+  color: var(--second-color);
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+footer a:hover {
+  color: var(--second-color);
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.12s ease-out;
+}
+
+footer .seguinos {
+  margin-top: 5px;
+}
+
+footer .seguinos i {
+  font-size: 20px;
+  color: var(--second-color);
+  padding-right: 5px;
+  padding-left: 5px;
+  cursor: pointer; 
+}
+
+footer .seguinos i:hover {
+  color: var(--first-color);
+  transition: all 0.12s ease-out;
+}
+
+/* ****** HOME FOOTER 2 ******  */
+#footer2 .copyright {
+  background-color: var(--fourth-color);
+  padding: 5px 20px 5px 20px;
+}
+
+#footer2 .copyright p {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+#footer2 a {
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+#footer2 a:hover {
+  font-weight: 600;
+  color: var(--white-color);
+  font-size: 0.8rem;
+  transition: all 0.12s ease-out;
+}
+
+/* **********  CONTACTO MAPA ********** */
+.contacto-mapa {
+  background: url(/images/mapa-contacto.webp);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: var(--dark-color);
+  height: 100vh;
+  min-height: 500px;
+  background-position: center;
+  padding-top: 0rem;
+  margin-top: -.5rem;
+}
+
+.contacto-mapa h3 {
+  font-size: 1.6rem;
+  font-family: "Righteous";
+  color: var(--first-color);
+}
+
+.contacto-mapa h4 {
+  font-size: 1rem;
+  font-family: 'Gill Sans MT';
+  color: var(--first-color);
+}
+
+.paises-activos {
+  top: 16%;
+  left: 40%;
+  position: absolute;
+}
+
+.argentina {
+  top: 94%;
+  left: 40.5%;
+  position: absolute;
+  cursor: pointer;
+  animation: all 3s ease-out;
+  transition: transform 0.5s;
+}
+
+.uruguay {
+  top: 91.5%;
+  left: 41.5%;
+  position: absolute;
+  cursor: pointer;
+  animation: all 3s ease-out;
+  transition: transform 0.5s;
+}
+
+.españa {
+  top: 66%;
+  left: 41%;
+  position: absolute;
+  cursor: pointer;
+  animation: all 5s ease-out;
+  transition: transform 0.5s;
+}
+
+.argentina:hover,
+.uruguay:hover,
+.españa:hover {
+  animation: all 5s ease-out;
+  transform: translateX(-5px);
+  color: var(--white-color);
+}
+
+/* ------ CONTACTO CONTAINER ------  */
+#contacto-container {
+  margin-left: 0.2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#contacto-container p {
+  color: var(--second-color);
+  font-size: 1.2rem;
+}
+
+#contacto-container span {
+  font-weight: 600;
+  color: var(--second-color);
+  font-size: 1.5rem;
+  margin-left: 1.2rem;
+  font-style: italic;
+}
+
+.img-contacto-container {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.img-contacto-container img {
+  margin-bottom: 2rem;
+  margin-left: 0.6rem;
+  transition: all 0.8s ease-out;
+  cursor: pointer; 
+}
+
+.img-contacto-container img:hover {
+  transition: all 0.8s ease-out;
+  transform: scale(1.15);
+}
+
+/* ------ CONTACTO BANNER FINAL ------  */
+#banner-final {
+  background: url(/images/contacto-banner-final.webp);
+  background-repeat: no-repeat;
+  background-color: var(--second-color);
+  background-size: cover;
+  color: var(--dark-color);
+  height: 0.5vh;
+  min-height: 600px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-final h3 {
+  font-family: "Righteous";
+  color: var(--white-color);
+  font-size: 6rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-left: 18rem;
+  line-height: 0.8;
+  margin-bottom: 3rem;
+}
+
+.banner-final span {
+  color: var(--first-color); 
+}
+
+.banner-final h4 {
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-left: 18rem;
+  line-height: 0.8;
+}
+
+.banner-final h5 {
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-left: 18rem;
+  line-height: 0.8;
+}
+
+
+/* **********  GESTIÓN DE PROYECTOS - HERO ********** */
+
+.gestion-hero {
+  background: url(/images/gestion-hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0.5vh;
+  min-height: 430px;
+  background-position: center;
+  margin-top: -.5rem;
+}
+
+.gestion-hero h2 {
+  display: flex;
+  text-align: start;
+  font-family: "Righteous";
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--first-color);
+  margin-top: 0rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+.gestion-hero p {
+  display: flex;
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-top: 2rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+/* ------ GESTIÓN DE PROYECTOS - CONTAINER 1 ------ */
+.container-texto {
+  margin-top: 2rem;
+}
+
+.container-texto p {
+  font-size: 1.125rem;
+}
+
+.container-texto span {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  font-weight: 550;
+}
+
+.container-texto i {
+  margin-left: 1.3rem;
+}
+
+/* ------  GESTIÓN DE PROYECTOS - Ventajas ------ */
+#ventajas {
+  padding-bottom: 4rem;
+}
+
+.ventajas-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  font-family: "Raleway";
+}
+
+.ventajas-list div {
+  background: var(--second-color);
+  padding: 30px;
+  border-radius: 45px;
+  transition: background 0.75s, transform 0.75s;
+  color: var(--white-color);
+  transition: all 0.4s ease-out;
+  font-family: "Raleway", sans-serif;
+}
+
+.ventajas-list div:hover {
+  background: var(--first-color);
+  color: var(--second-color);
+  transform: translateY(-20px);
+  transition: all 0.4s ease-out;
+}
+
+.ventajas-list ul {
+  padding-inline-start: 20px;
+}
+
+.ventajas-list div h3 {
+  font-family: "Righteous";
+  font-size: 21px;
+  font-weight: 400;
+  color: var(--first-color);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.ventajas-list div:hover h3 {
+  color: var(--second-color);
+}
+
+.ventajas-list div p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align:start;
+}
+
+/* ------ GESTIÓN DE PROYECTOS- CARDS  ------ */
+.card-gestion {
+  cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 3px 3px 1em 3px rgb(61, 61, 61);
+  /*box-shadow: 12px 12px 12px 0px rgb(0, 0, 0, .1);*/
+  transition: background 0.75s, transform 0.75s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.card-gestion:hover {
+  transform: translateY(-25px);
+  box-shadow: 1px 1px 2px 1px var(--fourth-color);
+  transition: all 0.7s ease-out;
+}
+
+.card-gestion p {
+  font-size: 12px;
+}
+
+.card-gestion {
+  cursor: pointer;
+  transition: all 0.7s ease-out;
+}
+
+.card-gestion img {
+  cursor: pointer;
+  transition: all 0.7s ease-out;
+}
+
+.card-gestion .btn-black:hover {
+  transform: none;
+}
+
+.card-gestion-imagen {
+  border-radius: 40px 40px 0px 0px ;
+}
+
+
+/* **********  BRANDING - HERO ********** */
+.branding-hero {
+  background: url(/images/branding-hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0.5vh;
+  min-height: 430px;
+  background-position: center;
+  margin-top: -.5rem;
+}
+
+.branding-hero h2 {
+  display: flex;
+  text-align: start;
+  font-family: "Righteous";
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--first-color);
+  margin-top: 0rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+.branding-hero p {
+  display: flex;
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-top: 2rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+/* **********  ESTRATEGIA DIGITAL - HERO ********** */
+.estrategia-digital-hero {
+  background: url(/images/estrategia-digital-hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0.5vh;
+  min-height: 430px;
+  background-position: center;
+  margin-top: -.5rem;
+}
+
+.estrategia-digital-hero h2 {
+  display: flex;
+  text-align: start;
+  font-family: "Righteous";
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--first-color);
+  margin-top: 0rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+.estrategia-digital-hero p {
+  display: flex;
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-top: 2rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+
+/* **********  EXPLORACIÓN DEL MERCADO - HERO ********** */
+.exploracion-hero {
+  background: url(/images/exploracion-hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0.5vh;
+  min-height: 430px;
+  background-position: center;
+  margin-top: -.5rem;
+}
+
+.exploracion-hero h2 {
+  display: flex;
+  text-align: start;
+  font-family: "Righteous";
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--first-color);
+  margin-top: 0rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+.exploracion-hero p {
+  display: flex;
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-top: 2rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+
+/* **********  UX RESEARCH - HERO ********** */
+.experiencia-de-usuario-hero {
+  background: url(/images/experiencia-de-usuario-hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0.5vh;
+  min-height: 430px;
+  background-position: center;
+  margin-top: -.5rem;
+}
+
+.experiencia-de-usuario-hero h2 {
+  display: flex;
+  text-align: start;
+  font-family: "Righteous";
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--first-color);
+  margin-top: 0rem;
+  margin-left: 1rem;
+  line-height: 0.9;
+}
+
+.experiencia-de-usuario-hero h3 {
+  display: flex;
+  text-align: start;
+  font-family: "Righteous";
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--first-color);
+  margin-top: 0rem;
+  margin-left: 1rem;
+  line-height: 0.8;
+}
+
+.experiencia-de-usuario-hero p {
+  display: flex;
+  text-align: start;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-top: 2rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+
+/* **********  OPORTUNIDADES FINANCIERAS - HERO ********** */
+.oportunidades-financieras-hero {
+  background: url(/images/oportunidad-financiera-hero1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0.5vh;
+  min-height: 430px;
+  background-position: center;
+  margin-top: -.5rem;
+}
+
+.oportunidades-financieras-hero h2 {
+  display: flex;
+  text-align: start;
+  font-family: "Righteous";
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--first-color);
+  margin-top: 0rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+.oportunidades-financieras-hero p {
+  display: flex;
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-top: 2rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+/* **********  CAPITALIZACIÓN  - HERO ********** */
+.capitalizacion-hero {
+  background: url(/images/capitalizacion-privada.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0.5vh;
+  min-height: 430px;
+  background-position: center;
+  margin-top: -.5rem;
+}
+
+.capitalizacion-hero h2 {
+  display: flex;
+  text-align: start;
+  font-family: "Righteous";
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--first-color);
+  margin-top: 0rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+.capitalizacion-hero p {
+  display: flex;
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-top: 2rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+
+/* **********  CRECIMIENTO ACELERADO  - HERO ********** */
+.crecimiento-acelerado-hero {
+  background: url(/images/crecimiento-acelerado-hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0.5vh;
+  min-height: 430px;
+  background-position: center;
+  margin-top: -.5rem;
+}
+
+.crecimiento-acelerado-hero h2 {
+  display: flex;
+  text-align: start;
+  font-family: "Righteous";
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--first-color);
+  margin-top: 0rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+.crecimiento-acelerado-hero p {
+  display: flex;
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-top: 2rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+
+/* **********  DESARROLLO WEB  - HERO ********** */
+.desarrollo-web-hero {
+  background: url(/images/desarrollo-web-hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0.5vh;
+  min-height: 430px;
+  background-position: center;
+  margin-top: -.5rem;
+}
+
+.desarrollo-web-hero h2 {
+  display: flex;
+  text-align: start;
+  font-family: "Righteous";
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--first-color);
+  margin-top: 0rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+.desarrollo-web-hero p {
+  display: flex;
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-top: 2rem;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+
+/* Small devices (tablets, 767px) */
+/* ***** ******* **************** */
+/* ****** ******* **************** */
+
+
+@media (width <= 767px) {
+  /* NAVBAR - @media hasta 767px */
+  .nav-item:hover {
+   background-color: transparent;
+  }
+  .nav-link {
+    padding-top: 0.75rem;
+    padding-left: 1rem;
+    font-size: 1.375rem;
+  }
+  .dropdown-menu {
+    --bs-dropdown-font-size: 22px;
+    padding-top: 0.75rem;  
+  }
+
+  .btn-primary,
+  .btn-yellow,
+  .btn-black {
+    --bs-btn-font-size: 1.125rem;
+  }
+
+  /* HOME - @media hasta 767px */
+  .home-hero {
+    min-height: 37.5rem;
+    background-position: 65% center;
+  }
+  .home-hero h1 {
+    font-size: 1.6rem;
+    margin-top: 11rem;
+    margin-left: 1rem;   
+  }
+
+  /* HOME CONTAINER 1 @media hasta 767px */
+  #home-container-1 h3 {
+    font-size: 1.25rem;
+  }
+  .img-home-container-1 {
+    margin-left: 0.1rem;
+    margin-top: 0.5rem;  
+  }
+
+  /* HOME PARALLAX 1 @media hasta 767px */
+  #banner-parallax {
+    height: 100vh;
+    background-position: 39%;
+    min-height: 37.5rem;
+  }
+  #banner-parallax h4 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-left: 7rem;
+  }
+  #banner-parallax .btn {
+    margin-left: 7rem;
+  }
+
+  /* HOME CONTAINER 2 @media hasta 767px */
+  #home-container-2 h4 {
+    font-size: 1.5rem;
+  }
+  #home-container-2 p {
+    font-size: 1.125rem;
+  }
+  .img-home-container-2 {
+    margin-bottom: 50px;
+    margin-left: 20px;
+    width: 85%;
+  }
+  
+ /* HOME CARDS @media hasta 767px */
+  #card-servicios h4 {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;   
+  }
+  #card-servicios .swiper {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  .cards {
+    width: 18.75rem;
+    height: 95%;
+  }
+  .home-cards-content span{
+    font-size: 1.5rem;
+  }
+  .card-text {
+    font-size: 1rem;
+    margin: 1em 0;
+  }
+  
+  /* HOME PARALLAX MEDIO @media hasta 767px */
+  #banner-medio-parallax {
+    background-image: url(../images/banner-medio-parallax.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    min-height: 500px;
+    background-position: 44% center;
+  }
+  #banner-medio-parallax h4 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-left: 6rem;
+  }
+  #banner-medio-parallax .btn {
+    margin-left: 6.1rem;
+  }
+  
+  /* HOME FONDOS CAROUSEL @media hasta 767px */
+  .fondos {
+    padding-bottom: 8rem !important;
+  }
+  .fondos {
+    padding-top: 5rem !important;
+    padding-bottom: 2rem !important;
+  }
+  #fondos .carousel-indicators {
+    display: none;
+  }
+  #fondos .d-inline {
+    width: 90%;
+  }
+
+  /* HOME BANNER FINAL @media hasta 767px */
+  #banner-final-home {
+    height: 70vh;
+    min-height: 450px;
+    background-position:59% center;
+  }
+  #banner-final-home h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--second-color);
+    margin-top: 10rem;
+    margin-left: 1rem;
+    line-height: 0.85;
+  }
+  #banner-final-home .btn {
+    font-size: 0.6rem; 
+  }
+  #banner-final-home .btn-black {
+    padding-left: .65rem;
+    padding-right: .65rem;
+    padding-top: .65rem;
+    padding-bottom: 0.65rem;
+    margin-left: 1rem;
+  }
+  #banner-final-home a {
+    line-height: 1.1;}
+
+
+  /* QUIENES SOMOS - CoFOUNDER @media hasta 767px */
+  .quienes-somos-hero {
+    background-position: 69% center;
+  }
+  .quienes-somos-hero h1 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-left: 1rem;
+    padding-bottom: 15rem;
+  }
+  .te-brindamos-list {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .te-brindamos-list ul {
+    font-size: 1.15rem;
+  }
+  .sub-title-te-brindamos {
+    font-size: 1.3rem;
+    font-weight: 540;    
+  }
+  .sub-title-te-brindamos ul {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  #banner-quienes-somos {
+    height: 80vh;
+    min-height: 600px;
+    background-position: 71%;
+  }
+  #banner-quienes-somos h3 {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+    line-height: 0.95;
+  }
+  #banner-quienes-somos h4 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    margin-top: 0rem;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+  }
+  #banner-quienes-somos .btn-black {
+    margin-left: 13rem;
+    margin-top: .1rem;
+    font-size: 0.8rem;
+  }
+  #CoFounder {
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    padding-left: 0.3rem;
+  }
+  .CoFounder-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .CoFounder img {
+    width: 100%;   
+  }
+  .layer {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .layer h3 {
+    font-size: 1.25rem;
+    margin-top: 260px;
+  }
+  .layer h4 {
+    display: flex;  
+    text-align: center;
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+  }
+  .layer ul {
+    font-size: 1rem;
+  }  
+ 
+  /* *** CONTACTO - MAPA @media hasta 767px *** */
+  .paises-activos {
+    top: 24%;
+    left: 28%;
+    position: absolute;
+  }
+  .contacto-mapa {
+    min-height: 900px;
+    background-position: 40%;
+    margin-top: -0.5rem;
+  }
+  .contacto-mapa h4 {
+    font-size: 1.25rem;
+  }
+  .españa {
+    display: none;
+  }
+  .uruguay {
+    display: none;
+  }
+  .argentina {
+    display: none;
+  }
+
+  /* *** CONTACTO - CONTAINER @media hasta 767px *** */
+  #contacto-container span {
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-top: 0rem;
+  }
+  .img-contacto-container img {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+  }
+
+  /* *** CONTACTO - BANNER FINAL @media hasta 767px *** */
+  #banner-final {
+    min-height: 700px;
+    background-position: 24% center;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .banner-final h3 {
+    font-size: 3.5rem;
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+  }
+  .banner-final span {
+    color: var(--first-color); 
+  }
+  .banner-final h4 {
+    color: var(--white-color);
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 30rem;
+    margin-left: 2.1rem;
+    line-height: 0.8;
+  }
+  .banner-final h5 {
+    color: var(--white-color);
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-left: 2.1rem;
+    line-height: 0.8; 
+  }
+
+  /* *** FOOTER @media hasta 767px *** */
+  footer {
+    justify-content: flex-start;
+  }
+  footer .col {
+    margin: 10px 20px;
+    padding: 0 1px;
+  }
+  .copyright small {
+    font-size: 13px;
+  }
+  #footer-1 h5 {
+    font-size: 21px;
+  }
+  #footer-1 h4 {
+    font-size: 18px;
+  }
+  #footer-1 a {
+    font-size: 15px;
+  }
+  #footer-1 .seguinos i {
+    font-size: 25px;
+  }
+
+
+  /* GESTIÓN DE PROYECTOS - HERO @media hasta 767px */
+  .gestion-hero {
+    min-height: 600px;
+    background-position: 80%;
+  }
+  .gestion-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 25rem;
+  }
+  .gestion-hero p {
+    font-size: 1.25rem;
+  }
+  .container-texto p {
+    font-size: 1.125rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #ventajas {
+    padding-bottom: 2rem;
+  }
+  .ventajas-list div {
+    padding: 1.5rem;
+  }
+  .ventajas-list i {
+    font-size: 1.125rem;
+    font-family: "Raleway", sans-serif;
+  }
+  #gestion-card .card-text {
+    font-size: 1rem;
+  }
+
+  /* BRANDING - HERO @media hasta 767px */
+  .branding-hero {
+    min-height: 600px;
+    background-position: 79%;
+  }
+  .branding-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 17rem;
+  }
+  .branding-hero p {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    padding-top: 9rem;
+  }
+
+  /* ESTRATEGIA DIGITAL - HERO @media hasta 767px */
+  .estrategia-digital-hero {
+    min-height: 600px;
+    background-position: 79%;
+  }
+  .estrategia-digital-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 17rem;
+  }
+  .estrategia-digital-hero p {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    padding-top: 9rem;
+  }
+
+  /* EXPLORACIÓN DEL MERCADO - HERO @media hasta 767px */
+  .exploracion-hero {
+    min-height: 600px;
+    background-position: 79%;
+  }
+  .exploracion-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 24rem;
+  }
+  .exploracion-hero p {
+    font-size: 1.25rem;
+    padding-top: 2rem;
+  }
+
+  /* UX RESEARCH EXPERIENCIA - HERO @media hasta 767px */
+  .experiencia-de-usuario-hero {
+    min-height: 600px;
+    background-position: 80%;
+  }
+  .experiencia-de-usuario-hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 19rem;
+  }
+  .experiencia-de-usuario-hero p {
+    font-size: 1.25rem;
+    margin-right: 0.3rem;
+    padding-top: 5rem;
+  }
+
+  /* OPORTUNIDADES FINANCIERAS - HERO @media hasta 767px */
+  .oportunidades-financieras-hero {
+    min-height: 600px;
+    background-position: 79%;
+  }
+  .oportunidades-financieras-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 15rem;
+  }
+  .oportunidades-financieras-hero p {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    padding-top: 10rem;
+  }
+
+  /* CAPITALIZACIÓN - HERO @media hasta 767px */
+  .capitalizacion-hero {
+    min-height: 600px;
+    background-position: 80%;
+  }
+  .capitalizacion-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 16rem;
+  }
+  .capitalizacion-hero p {
+    font-size: 1.25rem;
+    margin-right: 0.3rem;
+    padding-top: 8rem;
+  }
+
+  /* CRECIMIENTO ACELERADO - HERO @media hasta 767px */
+  .crecimiento-acelerado-hero {
+    min-height: 600px;
+    background-position: 80%;
+  }
+  .crecimiento-acelerado-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 13rem;
+  }
+  .crecimiento-acelerado-hero p {
+    font-size: 1.25rem;
+    margin-right: 0.3rem;
+    padding-top: 12rem;
+  }
+
+  /* DESARROLLO WEB - HERO @media hasta 767px */
+  .desarrollo-web-hero {
+    min-height: 600px;
+    background-position: 80%;
+  }
+  .desarrollo-web-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 9rem;
+  }
+  .desarrollo-web-hero p {
+    font-size: 1.25rem;
+    margin-right: 0.3rem;
+    padding-top: 17rem;
+  }
+
+}
+
+/* Tablet devices ( 768 - 1023px) */
+@media (width >= 768px) and (width <= 1023px) {
+
+   /* NAVBAR - @media hasta 1023px*/
+  .nav-item:hover {
+   background-color: transparent;
+  }
+  .nav-link {
+    padding-top: 0.75rem;
+    padding-left: 3rem !important;
+    font-size: 1.375rem;
+  }
+  .dropdown-menu {
+    --bs-dropdown-font-size: 22px;
+    padding-top: 0.9rem;  
+  }
+
+  /* HOME HERO */
+  .home-hero {
+    height: 0.75vh;
+    min-height: 700px;
+  }
+  .home-hero h4 {
+    font-size: 3rem;
+    margin-left: 5rem;
+    margin-right: 3rem;
+    margin-top: 12rem;
+  } 
+  
+  /* HOME PARALLAX 1 @media hasta 1023px */ 
+  #banner-parallax {
+    height: 60vh;
+    min-height: 500px;
+  }
+  #banner-parallax h4 {
+    font-size: 2rem;
+    color: var(--white-color);
+    margin-left: 15rem;
+  }
+  #banner-parallax {
+    background-position: 40%;
+  }
+  #banner-parallax .btn {
+    margin-left: 15rem;
+  }
+   
+  /* HOME CONTAINER 2 @media hasta 1023px */
+  .img-home-container-2 {
+    margin-bottom: 40px;
+    margin-left: 70px;
+  }
+
+  /* HOME BANNER MEDIO @media hasta 1023px */
+  #banner-medio-parallax {
+    height: 70vh;
+    background-position: 40% center;
+  }
+  #banner-medio-parallax h4 {
+    font-size: 4.5rem;
+    color: var(--second-color);
+    padding-bottom: 2.5rem;
+    line-height: 0.9;
+    margin-left: 20rem;
+  }
+  #banner-medio-parallax .btn-primary {
+    margin-left: 20rem;
+    margin-top: 2rem;
+  }
+
+  /* HOME BANNER FINAL @media hasta 1023px */
+  #banner-final-home {
+    height: 100vh;
+    min-height: 500px;
+    background-position: 58% center;  
+  }
+  #banner-final-home h4 {
+    font-size: 4rem;
+    margin-top: 22rem;
+    margin-left: 2rem;
+    line-height: 0.85;
+  }
+
+  /* QUIENES SOMOS - TE BRINDAMOS @media hasta 1023px */
+  #te-brindamos {
+    padding-bottom: 1rem;
+  }
+  .te-brindamos-list {
+    display: block;
+    margin-top: 2rem;
+    grid-gap: 50px;
+  }
+  .te-brindamos-list div {
+    background: var(--first-color);
+    padding: 1rem;
+    border-radius: 50px;
+    margin-bottom: 1.75rem;    
+  }
+  .te-brindamos-list ul {
+    font-size: 1.2rem;
+  }
+  .te-brindamos-list div h3 {
+    font-size: 1.5rem;
+  }
+
+  /* QUIENES SOMOS - BANNER @media hasta 1023px */
+  #banner-quienes-somos {
+    background-position: 70% center;
+  }
+
+  /* QUIENES SOMOS - CoFOUNDER @media 1023px - 1150px */
+  #CoFounder { 
+    padding-top: 0.5rem;
+    padding-bottom: 1.25rem;
+    padding-left: 0.5rem;
+  }
+  #CoFounder .container {
+    max-width: 640px;
+  }
+  .CoFounder-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    margin-left: 6rem;
+  }
+  .layer {
+    width: 80%;   
+    padding: 0 15px;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  /* CONTACTO MAPA @media 1023px - 1150px */
+  .contacto-mapa {
+    min-height: 500px;
+    background-position: 38%;
+  }
+  .contacto-mapa h3 {
+    font-size: 2.5rem;
+    margin-left: 0rem;
+    padding-left: 0rem;
+  }
+  .españa,
+  .argentina,
+  .uruguay {
+    display: none;
+  }
+  
+  /*  CONTACTO CONTAINER @media 1023px - 1150px */
+  #contacto-container span {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .img-contacto-container img {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+  }
+
+  /* *** CONTACTO - BANNER FINAL @media 1023px - 1150px*** */
+  .banner-final h3 {
+    font-size: 7rem;
+    margin-top: 4rem;
+    margin-left: 17rem;
+    margin-bottom: 2.2rem;
+    line-height: 0.9;
+  }
+  .banner-final h4 {
+    margin-left: 17rem;
+  }
+  .banner-final h5 {
+    margin-left: 17rem;
+  } 
+}
+
+/* X-Large devices (large desktops, 1024px - 1150px) */
+@media (width >= 1024px) and (width <=1150px){
+  
+    /* NAVBAR - @media 1024px and up*/
+    .nav-item:hover {
+      background-color: transparent;
+     }
+     .nav-link {
+       padding-top: 0.75rem;
+       padding-left: 3rem !important;
+       font-size: 1.375rem;
+     }
+     .dropdown-menu {
+       --bs-dropdown-font-size: 22px;
+       padding-top: 0.9rem;  
+     }
+   
+     /* HOME HERO */
+     .home-hero {
+       height: 0.75vh;
+       min-height: 700px;
+     }
+     .home-hero h4 {
+       font-size: 3rem;
+       margin-top: 10rem;
+     } 
+     
+     /* HOME PARALLAX 1 @media 1024px - 1150px */ 
+     #banner-parallax {
+       height: 60vh;
+       min-height: 500px;
+     }
+     #banner-parallax h4 {
+       font-size: 2.5rem;
+       color: var(--white-color);
+       margin-left: 0;
+     }
+     #banner-parallax {
+       background-position: 40%;
+     }
+     #banner-parallax .btn {
+       margin-left: 0;
+     }
+      
+     /* HOME CONTAINER 2 @media 1024px - 1150px */
+     .img-home-container-2 {
+       margin-bottom: 40px;
+       margin-left: 70px;
+     }
+   
+     /* HOME BANNER MEDIO @media 1024px - 1150px*/
+     #banner-medio-parallax {
+       height: 70vh;
+       background-position: 38% center;
+     }
+     #banner-medio-parallax h4 {
+       font-size: 5rem;
+       color: var(--second-color);
+       padding-bottom: 2.5rem;
+       line-height: 0.9;
+       margin-left: 4rem;
+     }
+     #banner-medio-parallax .btn-primary {
+       margin-left: 4rem;
+       margin-top: 0;
+     }
+   
+     /* HOME BANNER FINAL @media 1024px - 1150px */
+     #banner-final-home {
+       height: 50vh;
+       min-height: 400px;
+       background-position: 58% center;  
+     }
+     #banner-final-home h4 {
+       font-size: 3rem;
+       margin-top: 15rem;
+       margin-left: 2rem;
+       line-height: 0.85;
+     }
+   
+     /* QUIENES SOMOS - TE BRINDAMOS @media 1024px - 1150px */
+     #te-brindamos {
+       padding-bottom: 1rem;
+     }
+     .te-brindamos-list {
+       display: block;
+       margin-top: 2rem;
+       grid-gap: 50px;
+     }
+     .te-brindamos-list div {
+       background: var(--first-color);
+       padding: 1rem;
+       border-radius: 50px;
+       margin-bottom: 1.75rem;    
+     }
+     .te-brindamos-list ul {
+       font-size: 1.2rem;
+     }
+     .te-brindamos-list div h3 {
+       font-size: 1.5rem;
+     }
+   
+     /* QUIENES SOMOS - BANNER @media 1024px - 1150px */
+     #banner-quienes-somos {
+       background-position: 70% center;
+     }
+   
+     /* QUIENES SOMOS - CoFOUNDER @media 1024px - 1150px */
+     #CoFounder { 
+       padding-top: 0.5rem;
+       padding-bottom: 1.25rem;
+       padding-left: 0.5rem;
+     }
+     #CoFounder .container {
+       max-width: 640px;
+     }
+     .CoFounder-list {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+       grid-gap: 1rem;
+       margin-top: 2rem;
+       margin-bottom: 1.5rem;
+       margin-left: 6rem;
+     }
+     .layer {
+       width: 80%;   
+       padding: 0 15px;
+       text-align: left;
+       font-size: 1rem;
+     }
+   
+     /* CONTACTO MAPA @media 1024px - 1150px */
+     .contacto-mapa {
+       min-height: 500px;
+       background-position: 38%;
+     }
+     .contacto-mapa h3 {
+       font-size: 2.5rem;
+       margin-left: 0rem;
+       padding-left: 0rem;
+     }
+     .españa,
+     .argentina,
+     .uruguay {
+       display: none;
+     }
+     
+     /*  CONTACTO CONTAINER @media 1024px - 1150px */
+     #contacto-container span {
+       font-weight: 600;
+       font-size: 2rem;
+     }
+     .img-contacto-container img {
+       margin-top: 4rem;
+       margin-bottom: 2rem;
+       margin-left: 4rem;
+     }
+   
+     /* *** CONTACTO - BANNER FINAL @media 1024px - 1150px *** */
+     .banner-final h3 {
+       font-size: 7rem;
+       margin-top: 4rem;
+       margin-left: 17rem;
+       margin-bottom: 2.2rem;
+       line-height: 0.9;
+     }
+     .banner-final h4 {
+       margin-left: 17rem;
+     }
+     .banner-final h5 {
+       margin-left: 17rem;
+     } 
+
+}
+
+/* XX-Large devices (larger desktops, 1400px up)  */
+@media (min-width: 1400px) {
+
+}
